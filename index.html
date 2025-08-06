@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 サンプルページ</title>
+  <style>
+    
+    body {
+      margin: 0;
+      background: linear-gradient(to right, #000000, #000000); /* 背景の例 */
+      height: 100vh;
+    }
+    
+   
+
+
+    .menu {
+      z-index: 19;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 15px 0;
+      background-color: rgba(0, 0, 0, 0.161); /* 透明度30%の白背景 */
+      backdrop-filter: blur(10px); /* 背景ぼかし効果（対応ブラウザのみ） */
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    }
+    .discord-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  color: #5865F2;
+  border: 2px solid #5865F2;
+  border-radius: 8px;
+  background-color: transparent;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.discord-button:hover {
+  background-color: #5865F2;
+  color: white;
+  box-shadow: 0 0 10px rgba(88, 101, 242, 0.6);
+}
+
+   h1{
+    font-size: clamp(2rem, 5vw, 4.9rem);
+    color:white;
+    z-index: 1;
+   }
+   p{
+    font-size: clamp(1.0rem, 4vw, 1.7rem);
+    
+    color:#ccc
+   }
+    .menu a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+   .hero {
+  position: relative;
+  background-image: url('k.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* 半透明の背景 */
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+
+    /* 回転アニメーション */
+    
+  </style>
+</head>
+<body>
+
+  <nav class="menu">
+    <a href="#">トップ</a>
+    <a href="#">プロジェクト</a>
+    
+    <a href="#">メンバー</a>
+    
+  </nav>
+  
+  <section class="hero">
+  <div class="overlay">
+    
+    <h1>KeitaGames</h1>
+    
+    <p>開発者コミュニティー</p>
+    <a href="https://discord.gg/あなたの招待コード" class="discord-button" target="_blank">Join Our Discord</a>
+
+  </div>
+</section>
+
+  
+</div>
+
+  
+</body>
+</html>
